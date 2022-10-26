@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>164문제풀이</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>164문제풀이</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+            <hr>
+            <h3>개인 정보</h3>
+            <ul style="list-style: none;">
+                <li><label for="username">이름 </label><input type="text" name="username" id="username" placeholder="공백 없이 입력하세요"></li>
+                <li><label for="usertel">연락처 </label><input type="tel" name="usertel" id="usertel"></li>
+            </ul>
+            <h3>지원 분야</h3>
+            <ul style="list-style: none;">
+                <li><label for="pos1"><input type="radio" name="position" id="pos1" value="pos1"> 웹 퍼블리싱</label></li>
+                <li><label for="pos2"><input type="radio" name="position" id="pos2" value="pos2"> 웹 애플리케이션 개발</label></li>
+                <li><label for="pos3"><input type="radio" name="position" id="pos3" value="pos3"> 개발 환경 개선</label></li>
+            </ul>
+            <h3>지원 동기</h3>
+            <textarea name="motive" id="motive" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+            <br>
+            <button type="submit" id="btn1" onclick="OnClick();">접수하기</button>
+            <button type="reset">다시쓰기</button></fieldset>
+            </form>
+            
+            <script>
+                function OnClick() {
+                    // document.getElementById로 ID btn1 선택하기
+                    // var btn1 = document.getElementById("btn1");
+                    // btn1.textContent = "접수완료";
+
+                    //document.querySelector 로 ID btn1 선택하기
+                    var btn2 = document.querySelector("#btn1");
+                    btn2.textContent = "접수완료";
+                }
+            </script>
+</body>
+
+</html>

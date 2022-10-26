@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>목록만들기</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>목록만들기</h1>
+    <p>ol, ul, dl 태그들을 이용하여 리스트를 만듦</p>
+    <p style="color: red;">＊ ol, ul 자식요소는 li태그만 가능</p>
+    <pre>
+        &lt;ol&gt;
+        &lt;li&gt;항목&lt;/li&gt;
+        &lt;li&gt;항목&lt;/li&gt;
+        &lt;li&gt;항목&lt;/li&gt;
+        &lt;li&gt;항목&lt;/li&gt;
+        &lt;li&gt;항목&lt;/li&gt;
+        &lt;/ol&gt;
+    </pre>
+    <p>type은 종류 설정(1,a,A,i,I), start는 시작 위치 지정</p>
+    <ol type="i" start="3">
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+    </ol>
+    <hr>
+    <ul>
+        <li>아래의두목
+            <ul>
+                <li>아래 <ul>
+                        <li>아래</li>
+                        <li>아래</li>
+                        <li>아래</li>
+                        <li>아래</li>
+                        <li>아래</li>
+                    </ul>
+                </li>
+                <li>아래</li>
+                <li>아래</li>
+                <li>아래</li>
+                <li>아래</li>
+            </ul>
+        </li>
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+    </ul>
+    <hr>
+    <dl>
+        <dt>설명제목</dt>
+        <dd>설명내용1</dd>
+        <dd>설명내용2</dd>
+    </dl>
+
+    <h2>상품 구성</h2>
+    <table border="1">
+        <caption>선물용과 가정용 상품 구성</caption>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>선물용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            <td>선물용</td>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>52,000원</td>
+        </tr>
+        <tr>
+            <td>가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>30,000원</td>
+        </tr>
+        <tr>
+            <td>가정용</td>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>
+        </tr>
+    </table>
+</body>
+
+</html>

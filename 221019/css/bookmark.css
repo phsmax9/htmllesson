@@ -1,0 +1,7 @@
+#menubar {
+    top: 0px;
+    position: sticky;
+    background-color: gray;
+    pad: 15px;
+    padding-bottom: 5px;
+}

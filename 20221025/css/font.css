@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'mylove';
+    src: url("/htmllesson/fonts/love.ttf") format("truetype");
+}
+
+p {
+    font-family: 궁서, 궁서체, serif;
+    font-size: 1em;
+    /* em은 부모에 대한 퍼센트크기 1이 100퍼 */
+}
+
+#first {
+    font-family: "맑은 고딕";
+}
+
+.second {
+    font-family: "mylove";
+    font-size: 34px;
+}
+
+.second.imp {
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    font-family: 'Gugi', cursive;
+}
+
+td, th{
+    padding: 5px 15px;
+}
+
+
+#em{
+    font-size: 2em;
+}
+tr{
+    font-size: 22px;
+}
+#rem{
+    font-size: 2rem;
+}
+
+div{
+    height: 150px;
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 150px; 
+}

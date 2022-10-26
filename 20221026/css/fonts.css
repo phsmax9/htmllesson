@@ -1,0 +1,35 @@
+.vw {
+    font-size: 3vw;
+    /* viewport 넓이의 3% */
+}
+
+.vh {
+    font-size: 3vh;
+    /* viewport 높이의 3% */
+}
+
+.wave {
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    width: 300px;
+    margin: 50px 30px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    border: 1px solid black;
+    padding: 20px 40px;
+    margin: 5px;
+
+}
+

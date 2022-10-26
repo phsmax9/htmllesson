@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>테이블만들기</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<link rel="stylesheet" href="css/table.css">
+
+<body>
+    <h1>테이블을 만들어봅니다</h1>
+    <table>
+        <caption>title</caption>
+        <thead>
+            <tr>
+                <th>1열제목</th>
+                <th>2열제목</th>
+                <th>3열제목</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1행1열</td>
+                <td>1행2열</td>
+                <td>1행3열</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>2행1열</td>
+                <td>2행2열</td>
+                <td>2행3열</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <p>rowspan : 행 병합<br>colspan : 열 병합</p>
+
+    <table>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="2">8</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <colgroup>
+            <col>
+            <col style="background-color: aqua;">
+            <col style="background-color: blueviolet;">
+            <col style="background-color: chartreuse;">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2" colspan="2">3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="3">4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>요안도라 객실</caption>
+        <thead>
+            <tr>
+                <th>방 이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000워</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동백방</td>
+                <td>동성 도미토리</td>
+            </tr>
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+            <tr>
+                <td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">바깥채 전체를 렌트합니다</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

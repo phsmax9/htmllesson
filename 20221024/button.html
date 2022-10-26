@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>버튼</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>버튼</h1>
+
+    <form action="#" method="get" id="orderFrm">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label>이름 <input type="text" name="cName"></label></li>
+                <li><label>배송 주소 <input type="text" name="address"></label></li>
+                <li><label>이메일 <input type="email" name="email"></label></li>
+                <li><label>연락처 <input type="tel" name="tel"></label></li>
+                <li><label>배송지정 (주문일로부터 최소 3일 이후) <input type="date" name="date"></label></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+        <input type="image" src="/htmllesson/img/a.png" alt="주문하기">
+        <input type="button" value="주문하기" onclick="orderFrm.submit();">
+        <input type="button" value="새창" onclick="window.open('date.html','myWin','popup=1,left=100,top=100,width=320,height=320');">
+    </form>
+</body>
+
+</html>

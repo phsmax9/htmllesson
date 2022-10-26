@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>주요속성</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>폼요소의 주요속성</h1>
+
+    <form action="#" method="get">
+        <h3>number</h3>
+        <ul>
+            <li>
+                <input type="checkbox"> 선물용 3kg <input type="number" max="5" min="0" step="2" value="2" name="num">개
+                (최대5개)
+            </li>
+            <li>
+                <input type="checkbox"> 선물용 5kg <input type="number" max="3" min="0" name="num" placeholder="5kg">개
+                (최대3개)
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>range</h3>
+        <ul>
+            <li>
+                <input type="checkbox"> 선물용 3kg <input type="range" max="5" min="0" step="2" value="2" name="rng"
+                    id="rng1">개 (최대5개)
+                <input type="text" readonly size="5" value="2" id="cnt1" readonly>
+            </li>
+            <li>
+                <input type="checkbox"> 선물용 5kg <input type="range" max="3" min="0" name="rng" id="rng2">개 (최대3개)
+            </li>
+        </ul>
+        <input type="text" required placeholder="필수입력란">
+        <input type="submit" value="전송"> <!-- 버튼의 밸류는 값이아니고 버튼의 이름 -->
+    </form>
+
+    <script>
+        rng1.oninput = function () {
+            cnt1.value = rng1.value;
+        }
+    </script>
+
+    <hr>
+
+    <h1>회원 가입을 환영합니다</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li> <label>아이디 <input type="text" name="userid" required autofocus></label> </li>
+                <li> <label>이메일 <input type="email" name="useremail" required></label> </li>
+                <li> <label>비밀번호 <input type="password" name="userpw" required></label> </li>
+                <li> <label>비밀번호 확인 <input type="text" name="userpw_confirm" required></label> </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label><input type="radio" name="mailok" value="true" checked> 메일 수신</label>
+            <label><input type="radio" name="mailok" value="false"> 메일 수신 안함</label>
+        </fieldset>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+    </form>
+
+
+</body>
+
+</html>

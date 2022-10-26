@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>숫자입력필드</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>숫자입력필드</h1>
+    <form action="#" method="get">
+        <h3>number</h3>
+        <ul>
+            <li>
+                <input type="checkbox"> 선물용 3kg <input type="number" max="5" min="0" step="2" value="2" name="num">개 (최대5개)
+            </li>
+            <li>
+                <input type="checkbox"> 선물용 5kg <input type="number" max="3" min="0" name="num">개 (최대3개)
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>range</h3>
+        <ul>
+            <li>
+                <input type="checkbox"> 선물용 3kg <input type="range" max="5" min="0" step="2" value="2" name="rng" id="rng1">개 (최대5개)
+                <input type="text" readonly size="5" value="2" id="cnt1">
+            </li>
+            <li>
+                <input type="checkbox"> 선물용 5kg <input type="range" max="3" min="0" name="rng" id="rng2">개 (최대3개)
+            </li>
+        </ul>
+        <input type="submit" value="전송"> <!-- 버튼의 밸류는 값이아니고 버튼의 이름 -->
+    </form>
+
+    <script>
+        rng1.oninput = function () {
+            cnt1.value = rng1.value;
+        }
+    </script>
+</body>
+
+</html>

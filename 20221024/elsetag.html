@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>여러가지태그</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>여러가지태그</h1>
+
+    <form>
+        <textarea cols="20" rows="10"></textarea>
+        <hr>
+        <label for="item">상품선택</label>
+        <select id="item" multiple size="7">
+            <option value="">선택</option>
+            <optgroup label="선물용">
+                <option value="p3">선물용 3kg</option>
+                <option selected value="p5">선물용 5kg</option>
+            </optgroup>
+            <optgroup label="가정용">
+                <option value="h3">가정용 3kg</option>
+                <option value="h5">가정용 5kg</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <input type="text" list="myList">
+        <datalist id="myList">
+            <option value="opt1">옵션1</option>
+            <option value="opt2">옵션2</option>
+            <option value="opt3">옵션3</option>
+            <option value="opt4">옵션4</option>
+        </datalist>
+
+        <hr>
+
+        <input type="button" value="전송">
+        <button><img src="/htmllesson/img/a.png"></img>전송</button>
+    </form>
+</body>
+
+</html>

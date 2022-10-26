@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>사용자를 위한 인풋태그</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<link rel="stylesheet" href="css/form.css">
+
+<body>
+    <form action="#">
+        <fieldset>
+            <input type="text" size="50" value="text" maxlength="50" name="text">
+            <input type="password" size="50" value="password" maxlength="50" name="password">
+            <input type="search" size="50" value="search" maxlength="50" name="search">
+            <input type="url" size="50" value="url" maxlength="50" name="url">
+            <input type="email" size="50" value="email" maxlength="50" name="email">
+            <input type="tel" size="50" value="tel" maxlength="50" name="tel">
+        </fieldset>
+        <fieldset>
+            <legend>취미</legend>
+            <input type="checkbox" name="h1" id="h1" title="수영">
+            <label for="h1">수영</label>
+            <input type="checkbox" name="h2" id="h2" title="독서">
+            <label for="h2">독서</label>
+            <input type="checkbox" name="h3" id="h3" title="음악">
+            <label for="h3">음악</label>
+        </fieldset>
+        <fieldset>
+            <legend>클래스</legend>
+            <input type="radio" name="class" id="c1" title="1반" checked value="1">
+            <label for="c1">1반</label>
+            <input type="radio" name="class" id="c2" title="2반" value="2">
+            <label for="c2">2반</label>
+            <input type="radio" name="class" id="c3" title="3반" value="3">
+            <label for="c3">3반</label>
+        </fieldset>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="#">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label>이름<input type="text" name="t1"></label></li>
+                <li><label>배송 주소<input type="text" name="t1"></label></li>
+                <li><label>이메일<input type="text" name="t1"></label></li>
+                <li><label>연락처<input type="text" name="t1"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form action="#">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <input type="checkbox" name="product1" id="product1" title="상품1">
+            <label for="product1">선물용 3kg</label>
+            <input type="checkbox" name="product2" id="product2" title="상품2">
+            <label for="product2">선물용 5kg</label>
+            <input type="checkbox" name="product3" id="product3" title="상품3">
+            <label for="product3">가정용 3kg</label>
+            <input type="checkbox" name="product4" id="product4" title="상품4">
+            <label for="product4">가정용 5kg</label>
+            <p><b>포장 선택</b></p>
+            <input type="radio" name="select" value="ok" id="s1">
+            <label for="s1">선물 포장</label>
+            <input type="radio" name="select" value="no" id="s2">
+            <label for="s2">선물 포장 안 함</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
