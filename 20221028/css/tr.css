@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+}
+
+.wrap{
+    width: 415px;
+    height: 625px;
+}
+
+.h2{
+    height: 205px;
+}
+.hr3{
+height: 310px;
+}
+
+.wr3{
+    width: 310px;
+}
+
+.w4{
+    width: 400px;
+}
+
+.ww4{
+    width: 415px;
+}
+
+.hwr4{
+    height: 415px;
+}
+
+
+
+.martop{
+    margin-top: 5px;
+}
+
+.marleft{
+    margin-left: 5px;
+}
+
+
+.float{
+    float: left;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell{
+    background-color: gray;
+    border-radius: 5px;
+}

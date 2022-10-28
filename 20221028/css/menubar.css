@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    margin: 10px 10px 15px 10px;
+
+}
+
+a[target=_blank] {
+    border: 1px solid #000;
+    background-color: rgb(216, 215, 215);
+    padding: 5px 15px;
+    box-shadow: 5px 5px 1px 1px rgb(136, 136, 136);
+    border-radius: 5px;
+}
+
+
+a[target=_blank]:hover {
+    background-color: white;
+    box-shadow: 5px 5px 1px 1px rgb(0, 0, 0);
+}
+
+a:visited, a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+.clear::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.menubar{
+    border: 10px solid #000;
+    position: sticky;
+    top: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    outline: 1px solid #000;
+}
